@@ -494,3 +494,59 @@ Future optimizations:
 - Connection pooling for API calls
 - Response caching at HTTP level
 
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
