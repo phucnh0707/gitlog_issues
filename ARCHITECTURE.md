@@ -336,4 +336,161 @@ Future optimizations:
 - SQLite cache backend instead of CSV
 - Connection pooling for API calls
 - Response caching at HTTP level
+heManager
+├─ File not found → logger.warning(), return empty dict
+├─ JSON parse error → logger.warning(), skip row
+└─ Write error → logger.error(), but continue execution
+
+EmbeddingGenerator
+├─ API error → logger.error(), propagate exception
+└─ Batch too large → handled by batch_size = 100
+
+LLMNarrativeGenerator
+├─ API error → logger.error(), return placeholder
+├─ JSON format error → logger.error(), return default
+└─ Knowledge gaps missing → gracefully handle
+
+All operations are wrapped in try-except with appropriate logging
+```
+
+## Security Considerations
+
+- `.env` file is git-ignored (never committed)
+- API key loaded from `.env` only at startup
+- Cache files (CSV) contain only vectors and text, no credentials
+- All file I/O uses standard Python libraries
+- No sensitive data in logs (only metrics and progress)
+
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
+
+heManager
+├─ File not found → logger.warning(), return empty dict
+├─ JSON parse error → logger.warning(), skip row
+└─ Write error → logger.error(), but continue execution
+
+EmbeddingGenerator
+├─ API error → logger.error(), propagate exception
+└─ Batch too large → handled by batch_size = 100
+
+LLMNarrativeGenerator
+├─ API error → logger.error(), return placeholder
+├─ JSON format error → logger.error(), return default
+└─ Knowledge gaps missing → gracefully handle
+
+All operations are wrapped in try-except with appropriate logging
+```
+
+## Security Considerations
+
+- `.env` file is git-ignored (never committed)
+- API key loaded from `.env` only at startup
+- Cache files (CSV) contain only vectors and text, no credentials
+- All file I/O uses standard Python libraries
+- No sensitive data in logs (only metrics and progress)
+
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
+
+heManager
+├─ File not found → logger.warning(), return empty dict
+├─ JSON parse error → logger.warning(), skip row
+└─ Write error → logger.error(), but continue execution
+
+EmbeddingGenerator
+├─ API error → logger.error(), propagate exception
+└─ Batch too large → handled by batch_size = 100
+
+LLMNarrativeGenerator
+├─ API error → logger.error(), return placeholder
+├─ JSON format error → logger.error(), return default
+└─ Knowledge gaps missing → gracefully handle
+
+All operations are wrapped in try-except with appropriate logging
+```
+
+## Security Considerations
+
+- `.env` file is git-ignored (never committed)
+- API key loaded from `.env` only at startup
+- Cache files (CSV) contain only vectors and text, no credentials
+- All file I/O uses standard Python libraries
+- No sensitive data in logs (only metrics and progress)
+
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP levelheManager
+├─ File not found → logger.warning(), return empty dict
+├─ JSON parse error → logger.warning(), skip row
+└─ Write error → logger.error(), but continue execution
+
+EmbeddingGenerator
+├─ API error → logger.error(), propagate exception
+└─ Batch too large → handled by batch_size = 100
+
+LLMNarrativeGenerator
+├─ API error → logger.error(), return placeholder
+├─ JSON format error → logger.error(), return default
+└─ Knowledge gaps missing → gracefully handle
+
+All operations are wrapped in try-except with appropriate logging
+```
+
+## Security Considerations
+
+- `.env` file is git-ignored (never committed)
+- API key loaded from `.env` only at startup
+- Cache files (CSV) contain only vectors and text, no credentials
+- All file I/O uses standard Python libraries
+- No sensitive data in logs (only metrics and progress)
+
+## Scalability
+
+Current system designed for:
+- 2,000-5,000 commits per repository
+- 50-150 clusters typically
+- Top 15 narratives generated
+- Single-threaded sequential processing
+
+Future optimizations:
+- Parallel embedding generation using batching
+- Parallel LLM generation using threading/async
+- SQLite cache backend instead of CSV
+- Connection pooling for API calls
+- Response caching at HTTP level
 
